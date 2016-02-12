@@ -16,7 +16,7 @@ if sys.version < '3':
 else:
     text_type = str
 
-JS_IDENTIFIER_RE = re.compile(r'^[$A-Z_][\dA-Z_$]*$')
+JS_IDENTIFIER_RE = re.compile(r'^[$A-Z_][\dA-Z_.$]*$')
 
 
 def prepare_url_list(urlresolver, namespace_path='', namespace=''):
